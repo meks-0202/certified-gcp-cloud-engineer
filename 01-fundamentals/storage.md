@@ -31,6 +31,7 @@
 - Bigtable is ideal for storing large amount of data with very low latency. Supports high throughput for reads and writes as well
 - Bigtable is offered through the same open-source API as HBase
 - Bigtable offers data encryption in-flight and at rest. Access to tables can be controlled using IAMs
+- Cloud Bigtable is designed for large amounts of data and high write and read throughput, which makes it suitable for time-series data from sensors.
 
 ## Cloud SQL
 
@@ -40,6 +41,7 @@
 - Cloud SQL can replicate data between multiple zones with automatic failover
 - It provides on-demand and scheduled backups
 - It can scale vertically and horizontally (with read replicas)
+- Cloud SQL is more suited for structured data in online transaction processing, not for large-scale time-series data.
 
 ## Cloud Spanner
 
@@ -47,6 +49,7 @@
 - Offer transactional consistency at a global scale
 - It has schemas and automatic synchronous replication for HA
 - It can provides petabytes of capacity
+- Cloud Spanner is a global database solution but may not be the most cost-effective option for time-series data.
 
 ## Cloud Datastore
 
