@@ -5,7 +5,7 @@
 ## Pub/Sub
 - Pub/sub does not offer built-in real-time stream processing and analytics capabilities. Cloud Pub/Sub is a messaging service that enables asynchronous communication between independent components of an application. While it can handle message streaming.
 
-##App Engine
+## App Engine
 - Google App Engine Standard Environment is designed for stateless applications and automatically scales based on traffic, meeting both requirements.
 - App Engine is a fully managed platform-as-a-service (PaaS) offering that provides automatic scaling and load balancing capabilities for web applications. It abstracts away infrastructure concerns, allowing developers to focus on writing code rather than managing servers.
 
@@ -21,3 +21,6 @@ Cloud Functions scale automatically, including down to zero, making it cost-effe
 Shared Network Namespace: Containers in the same pod can communicate with each other using localhost, which provides minimal latency.
 
 Shared Storage: They can also share volumes, providing an easy way to share data between containers.
+
+## Deployment Manager
+- deployment manager is the Infrastructure as a code tool for GCP. Deployment Manager is the recommended method for dynamically provisioning VMs on Compute Engine according to Google's best practices. Deployment Manager allows you to describe and provision all the resources necessary for your application in a declarative format, using YAML or Python templates. It provides a consistent and reproducible way to create and manage your infrastructure. By defining the VM specifications in a configuration file and using Deployment Manager, you can easily create and manage multiple VM instances in an automated and scalable manner.
