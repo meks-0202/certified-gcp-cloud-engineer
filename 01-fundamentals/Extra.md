@@ -24,3 +24,20 @@ Shared Storage: They can also share volumes, providing an easy way to share data
 
 ## Deployment Manager
 - deployment manager is the Infrastructure as a code tool for GCP. Deployment Manager is the recommended method for dynamically provisioning VMs on Compute Engine according to Google's best practices. Deployment Manager allows you to describe and provision all the resources necessary for your application in a declarative format, using YAML or Python templates. It provides a consistent and reproducible way to create and manage your infrastructure. By defining the VM specifications in a configuration file and using Deployment Manager, you can easily create and manage multiple VM instances in an automated and scalable manner.
+
+## Cloud Spanner
+- Cloud Spanner is a fully managed relational database with unlimited scale, strong consistency, and up to 99.999% availability.
+
+- Additional note: Cloud Spanner is a fully managed, mission-critical, relational database service that offers transactional consistency at a global scale, automatic, synchronous replication for high availability, and support for two SQL dialects: Google Standard SQL (ANSI 2011 with extensions) and PostgreSQL.
+
+- It provides strong consistency and ensures that users from all over the world see the exact same data with minimal latency. It automatically replicates data across multiple regions, making it highly available and reducing latency for users.
+
+## Cloud Identity Proxy
+- Cloud Identity Aware Proxy can be used to enable access to VMs that do not have external IP addresses or do not permit Direct Access over the internet. Configuring Cloud Identity-Aware Proxy for SSH and TCP resources allows you to access the VMs using an SSH client over the internet without having to configure any specific network-related changes. This option ensures that no additional configuration is required for new VMs added to the project.
+
+## Random
+- External Network Load Balancer exposes the traffic to the internet and it supports UDP. Setting up an External Network load balancer allows for load balancing of UDP traffic and can provide a single IP address for external access to the backend servers.
+- For MySQL  You must enable binary logging to use point-in-time recovery. Enabling binary logging causes a slight reduction in write performance.
+-  "The application holds the full database in-memory for fast data access", so it'll be more appropriate to use memory-optimized machine types. The M1 machine type in Compute Engine is designed for memory-intensive workloads. It provides a high memory-to-CPU ratio, making it suitable for applications that need to store the full database in memory to minimize latency.
+-  If a data Studio report is broken then it probably means that the data which it is connected to is broken, so the first thing to look at is BigQuery. Going to the BigQuery interface allows you to review the nightly job that recalculates the daily summary and overwrites the table. By reviewing the job, you can look for any errors or issues that may have caused the charts in the Data Studio dashboard to break. This is the most direct and relevant method to debug the issue.
+-  
